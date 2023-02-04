@@ -69,7 +69,6 @@ public class OrderTest {
     @Test
     void withoutPhone() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Андреева Анна");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79111111111");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button__text")).click();
         String expected = "Поле обязательно для заполнения";
